@@ -3,5 +3,9 @@
 <ul>
   <% characters.forEach(character => { %>
   <li><a href="/characters/<%- character.id %>"> <%= character.name %> </a></li>
+  <a href="/movie-characters/edit/<%= id %>">Edit character</a>
+  <a href="/movie-characters/delete/<%= id %>">Delete character</a>
   <% }) %>
 </ul>
+
+<button><a href="/characters/create">Create a new character</a></button>

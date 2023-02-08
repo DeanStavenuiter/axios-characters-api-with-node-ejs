@@ -1,0 +1,19 @@
+<style>
+  .create-char{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+</style>
+<div class="create-char">
+  <h1>Create a new character</h1>
+  <form method="POST" action="/characters/create">
+    <label >Name: <input type="text" name="name" /></label>
+    <label >Occupation: <input type="text" name="occupation"/></label>
+    <label >weapon: <input type="text" name="weapon"/></label>
+    <label >debt: <input type="text"  name="debt"/></label>
+    <button type="submit">create new character</button>
+  </form>
+</div>
